@@ -1,0 +1,68 @@
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+<view class="flex-col page space-y-174">
+  <view class="shrink-0 self-start section"></view>
+ 
+  <view class="flex-col">
+    <image
+  class="shrink-0 image"
+  src="../../../images/f4f53fdd264530e544831dfba640f6fa.png"
+/>
+    <view style="margin-left:35rpx">
+    <text class="self-start text">Hi Teacher!\n</text>
+    <text class="self-start text_2">Sign in to continue</text>
+    </view>
+    <view class="flex-col section_2">
+      <view class="flex-col group">
+        <text class="self-start font_1 text_3">姓名</text>
+        <view class="flex-col group_2">
+          <van-field
+            border="false"
+            required="true"
+            placeholder="请输入真实姓名"
+            class="inputValue_EZK"
+            bind:blur="EZK_onInputBlur"
+            placeholder-style="color: #bfb2b2e6"
+            input-class="inputValue_EZK_value"
+            custom-style="background-color: #eff2f5; border-radius: 14px; padding: 14px 13px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;"
+            value="{{ inputValue_EZK }}"
+          ></van-field>
+          <text class="self-start font_1 text_1">工号</text>
+        </view>
+        <van-field
+          class="view_2 inputValue_jBc"
+          border="false"
+          required="true"
+          placeholder="请输入真实工号"
+          bind:blur="jBc_onInputBlur"
+          placeholder-style="color: #bfb2b2e6"
+          input-class="inputValue_jBc_value"
+          custom-style="background-color: #eff2f5; border-radius: 14px; padding: 14px 13px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;"
+          value="{{ inputValue_jBc }}"
+        ></van-field>
+        <text class="self-start font_1 text_7">手机号</text>      
+        <view style="display:flex;"> 
+        <van-field
+          readonly
+          class="view_2 inputValue_Til"
+          border="false"
+          required="true"
+          placeholder="点击授权手机号按钮"
+          placeholder-style="color: #bfb2b2e6"
+          input-class="inputValue_Til_value"
+          custom-style="background-color: #eff2f5; border-radius: 14px; padding: 14px 13px; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;"
+          value="{{ inputValue_Til }}"
+         style="width: 384rpx; height: 92rpx; display: block; box-sizing: border-box"></van-field>
+  
+         <button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" style="background-color: #fff;font-size:30rpx;color: #2ec4b6; position: relative; top: 28rpx; width: 220rpx; height: 92rpx; left:20rpx;display: flex;justify-content: center;align-items: center; box-sizing: border-box;border:2rpx solid #2ec4b6">授权手机号</button>
+        </view>
+      </view>
+      <view class="flex-row justify-center items-center section_5 space-x-3" bindtap="onLoginClick">
+        <text class="font_2 text_10" >注册</text>
+        <image
+          class="image_2"
+          src="../../../images/16892395551285952119.png"
+        />
+      </view>
+    </view>
+  </view>
+</view>

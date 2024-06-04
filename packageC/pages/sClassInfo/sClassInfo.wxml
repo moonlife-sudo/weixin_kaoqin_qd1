@@ -1,0 +1,104 @@
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+<template name="sclassTemplate">
+  <block wx:for="{{ submittedData }}" wx:key="index">
+<view class="flex-col list space-y-22 pos">
+<view class="fullcontainer">
+     <view
+       class="flex-col items-start list-item"
+       bindtap="onClick_1" data-index="{{index}}">
+       <text class="font_2 text_4">{{item.courseName}}</text>
+       <text class="font_3">教师：{{item.realName}}</text>
+       <text class="font_3">地点：{{item.addressName}}</text>
+       <text class="font_3">课程号：{{item.courseNumber}}</text>      
+     </view>
+     <view class="detail">
+       <text class="text_1"data-index="{{index}}" bindtap="onClick_4">详情</text>
+       </view>
+       </view>
+   </view>
+  </block>
+</template>
+
+<view class="flex-col page">
+ <view class="flex-row items-center">
+ <view class="flex-row justify-between items-center flex-auto section">
+   <view class="flex-row space-x-10">
+     <image
+       class="shrink-0 image_3"
+       src="../../../images/16892395451950173387.png"
+     />
+  <van-cell-group>
+  <van-field
+   value="{{ input_value}}"
+   placeholder="请输入课程名"
+   border="{{ false }}"
+   bind:blur="onChange"
+   
+ />
+</van-cell-group>
+   
+</view>
+</view>
+   <image
+   class="shrink-0 image_1"
+   src="../../../images/saoma.png"
+   bindtap="scanQRCode"
+ />
+</view>
+
+ <view class="flex-col justify-start items-center flex-auto relative group_3">
+  <image
+     class="image_5"
+     src="../../../images/16898208604982120601.png"
+   />
+  <image
+         class="image_8 pos_4"
+         src="../../../images/16893000787414694779.png"
+         bindtap="onClick_popup"
+       />
+   <view class="container">
+  <template is="sclassTemplate" data="{{ submittedData: submittedData }}"></template>
+  </view>
+   <view class="section_2 pos_2"></view>
+   <view class="flex-row equal-division pos_3">
+     <view class="flex-col items-center equal-division-item">
+       <image
+         class="image_6"
+         src="../../../images/16892395451976668314.png"
+       />
+       <text class="font_1">打卡</text>
+     </view>
+     <view class="flex-col items-center equal-division-item">
+       <image
+         class="image_6"
+         src="../../../images/file.png"bindtap="onClick_5"
+       />
+       <text class="font_1"bindtap="onClick_5">资料</text>
+     </view>
+     <view class="flex-col items-center equal-division-item">
+       <image
+         class="image_6" bindtap="onClick_3"
+         src="../../../images/16892395451989456457.png"
+       />
+       <text class="font_1"bindtap="onClick_3">我的</text>
+       
+      
+     </view>
+   </view>
+ </view>
+</view>
+<van-popup
+    show="{{ show_popup }}"
+    position="bottom"
+    custom-style="height: 40%;overflow:hidden;"
+    bind:close="onClose_popup">
+    <van-picker
+    show-toolbar="true"
+    title="请选择添加的班级"
+    columns="{{ columns }}"
+    bind:cancel="onCancel_1"
+    bind:change="onChange_1"
+    bind:confirm="onConfirm_1">
+  
+  </van-picker>
+  </van-popup>

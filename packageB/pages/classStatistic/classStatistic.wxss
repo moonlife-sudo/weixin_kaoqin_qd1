@@ -1,0 +1,161 @@
+.page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+/* 添加 CSS 样式 */
+/* 添加 CSS 样式 */
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 160px; /* 可以根据需要调整此值以控制行的间距 */
+}
+
+.studentName {
+  padding-left: 20rpx;
+}
+
+
+
+.count {
+  /* 单独设置学生次数的样式 */
+}
+
+
+.my-chart{
+  
+	width: 100%;
+  height: 1000rpx;
+}
+.chart-canvas {
+  width: 100%;
+  height: 100%;
+}
+ec-canvas{
+	width: 100%;
+	height: 100%;
+}
+.space-y-8 > view:not(:first-child),
+.space-y-8 > text:not(:first-child),
+.space-y-8 > image:not(:first-child) {
+  margin-top: 13.95rpx;
+}
+.group_5 {
+  margin-top: 31.4rpx;
+  width: 258.14rpx;
+}
+.space-y-30 > view:not(:first-child),
+.space-y-30 > text:not(:first-child),
+.space-y-30 > image:not(:first-child) {
+  margin-top: 52.33rpx;
+}
+.text_7 {
+  line-height: 38.37rpx;
+}
+.group_7 {
+  padding-bottom: 5.23rpx;
+}
+.image_2 {
+  margin-right: 3.49rpx;
+  border-radius: 87.21rpx;
+  width: 174.42rpx;
+  height: 174.42rpx;
+}
+.section_4 {
+  background-color: #5cc906;
+  border-radius: 50%;
+  width: 40.12rpx;
+  height: 40.12rpx;
+  border: solid 5.23rpx #ffffff;
+}
+.pos {
+  position: absolute;
+  right: 27.03rpx;
+  top: 139.53rpx;
+}
+.group_4 {
+  margin-right: 62.79rpx;
+}
+.space-y-24 > view:not(:first-child),
+.space-y-24 > text:not(:first-child),
+.space-y-24 > image:not(:first-child) {
+  margin-top: 41.86rpx;
+}
+.font_3 {
+  font-size: 41.86rpx;
+  font-family: Roboto;
+  font-weight: 900;
+  color: #c92323;
+}
+.text_6 {
+  line-height: 40.12rpx;
+}
+.group_6 {
+  margin-left: 8.72rpx;
+}
+.text_8 {
+  line-height: 81.98rpx;
+}
+.text_9 {
+  color: #c92323;
+  font-size: 111.63rpx;
+  font-family: Roboto;
+  font-weight: 900;
+  line-height: 81.98rpx;
+}
+.text_10 {
+  margin-left: 45.35rpx;
+  color: #000000;
+  font-size: 31.4rpx;
+  font-family: Roboto;
+  line-height: 29.65rpx;
+}
+.text_11 {
+  margin-left: 31.4rpx;
+  color: #78858f;
+  line-height: 19.19rpx;
+}
+.equal-division {
+  position:fixed;
+  margin-top:875rpx;
+  width: 364.53rpx;
+}
+.equal-division-item {
+  position: relative;
+  margin-top:450rpx;
+  padding-top: 6.98rpx;
+}
+.space-y-4 > view:not(:first-child),
+.space-y-4 > text:not(:first-child),
+.space-y-4 > image:not(:first-child) {
+  margin-top: 6.98rpx;
+}
+.image_3 {
+  width: 32.27rpx;
+  height: 32.27rpx;
+}
+.image_4{
+  width: 32.27rpx;
+  height: 32.27rpx;
+}
+.font_4 {
+  font-size: 26.16rpx;
+  font-family: Poppins;
+  line-height: 25.29rpx;
+  color: #697b7a;
+}
+.text_12 {
+  font-size: 27.91rpx;
+}
+.bg{
+  background-color: #ffffff;
+}
+
+.test{
+  background-color: #ffffff;
+  height: 75rpx;
+}
+

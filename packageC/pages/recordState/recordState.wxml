@@ -1,0 +1,32 @@
+<view class="flex-col page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="flex-col flex-auto group_3">
+    <view class="flex-col justify-start relative group_4">
+      <image
+        class="image_2"
+        src="../../../images/16892395494210246148.png"
+      >
+      </image>
+      <view class="section pos" bindtap="SUB" style="position: absolute; left: NaNrpx; top: NaNrpx"></view>
+      <text class="text_4 pos_2" bindtap="SUB">{{title}}</text>
+    </view>
+    <view class="flex-col justify-start section_2">
+      <view class="flex-row equal-division">
+        <view class="flex-col items-center equal-division-item space-y-4">
+          <image
+            class="image_3"
+            src="../../../images/16892395451976668314.png"
+          />
+          <text class="font_1">打卡</text>
+        </view>
+        <view class="flex-col items-center equal-division-item space-y-4">
+          <image
+            class="image_3"
+            src="../../../images/16892395451989456457.png"
+          />
+          <text class="font_1" bindtap="onClick_3">我的</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

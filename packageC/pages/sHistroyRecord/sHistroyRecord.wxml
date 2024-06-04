@@ -1,0 +1,16 @@
+<view class="flex-col page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="su-table-box">
+  <view class="su-table">
+    <!-- 表格标题 -->
+    <view class="su-tr">
+      <view class="su-th" wx:for="{{list.th}}" wx:key="index">{{item}}</view>
+    </view>
+    <!-- 表格内容 -->
+    <view class="su-tr" wx:for="{{list.td}}" wx:for-item="tdinfo" wx:key="index">
+      <view class="su-td" wx:for="{{tdinfo}}" wx:key="index_">{{item}}</view>
+    </view>
+  </view>
+ </view>
+</view>
+

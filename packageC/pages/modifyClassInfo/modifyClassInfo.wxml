@@ -1,0 +1,155 @@
+<view class="flex-col justify-start page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="flex-col section">
+    <view class="shrink-0 self-start section_2"></view>
+    <view class="flex-row items-center group space-x-8">
+      <image
+        class="image"
+        src="../../../images/16892967237413386715.png"bindtap="onClick"
+      />
+      <text class="text"bindtap="onClick">修改班级信息</text>
+    </view>
+    <view class="flex-col section_3">
+      <view class="flex-col group_2">
+        <view class="flex-row justify-between group_3">
+          <text class="font_1 text_2">课程ID</text>
+          <text class="font_1 text_3">课程名称</text>
+        </view>
+        <view class="flex-row equal-division">
+          <view class="flex-col equal-division-item">
+            <view class="flex-col group_4">
+              <text class="self-start font_2 text_4">{{classNumber}}</text>
+              <image
+                class="shrink-0 self-end image_2 image_3"
+                src="../../../images/16892967248882804641.png"
+              />
+            </view>
+            <image
+              class="image_4"
+              src="../../../images/16892993410868475112.png"
+            />
+          </view>
+          <view class="flex-col equal-division-item">
+            <view class="flex-row justify-between items-center group_5">
+              <text class="font_2 text_5">{{className}}</text>
+              <image
+                class="image_2"
+                src="../../../images/16892967248882804641.png"
+              />
+            </view>
+            <image
+              class="image_4"
+              src="../../../images/16892993410868475112.png"
+            />
+          </view>
+        </view>
+        <text class="self-start font_1 text_6"decode="{{true}}">上课地点&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;班级总人数         </text>
+       
+        <view class="underline-input">
+          <text class="font_2 text_5"decode="{{true}}">{{addressName}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{totalNumber}}</text>
+        </view>
+        <text class="self-start font_1 text_8">是否允许加入</text>
+        <van-switch
+          class="section_5 switch_lfk"
+          checked="{{ checked }}"
+          size="26.00"
+          active-color="#b7e7e1"
+          inactive-color="#ed3535"
+          
+          bind:change="onSwitchChange_lfk"
+          
+        ></van-switch>
+      </view>
+      <view class="flex-col group_6">
+        <text class="self-start font_3 text_10">学生列表</text>
+        
+        <view class="flex-row justify-between items-center flex-auto section_11">
+      <view class="flex-row wx_search">
+        <image
+          class="shrink-0 image_search"
+          src="../../../images/16892395451950173387.png"
+        />
+      </view>
+      <view class="field_container">
+          <van-cell-group>
+            <van-field
+              value="{{ input_value }}"
+              placeholder="请输入学生姓名"
+              border="{{ false }}"
+              bind:blur="onChange"
+            />
+          </van-cell-group>
+      </view>
+    </view>
+        <view class="flex-row justify-evenly group_7">
+          <view class="flex-col justify-start items-start relative text-wrapper">
+            <text class="font_4 text_11">学生名</text>
+          </view>
+          <view class="flex-col justify-start items-start relative text-wrapper_2">
+            <text class="font_4 text_12">学号</text>
+          </view>
+          <view class="flex-col justify-start items-start text-wrapper_3">
+            <text class="font_4 text_13">操作</text>
+          </view>
+        </view>
+        
+        <view class="flex-col">
+          
+          <view
+    class="flex-row justify-between relative section_6"
+    wx:key="index"
+    wx:for-item="item"
+    wx:for-index="index"
+    wx:for="{{list_1HGZ42fr}}"
+    data-index="{{index}}"
+  >
+
+      <text class="self-start font_3">{{ item.student_name }}</text>
+<view class="flex-row items-center self-center group_8 space-x-38">
+  <text class="font_5">{{ item.student_number }}</text>
+  <view class="flex-row shrink-0 space-x-12">
+    <view class="flex-col justify-start items-center text-wrapper_4"><text class="font_6" bindtap="showDialog"data-index="{{index}}">删除</text></view>
+    <view class="flex-col justify-start items-center text-wrapper_5">
+      <text class="font_7 text_14" bindtap="onClick_ck"data-index="{{index}}">查看</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    
+    </view>
+  </view>
+
+
+      
+      <view class="flex-col justify-start items-center image-wrapper">
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<van-dialog  
+  use-slot
+  title="学生信息"
+  show="{{ show }}"
+  show-confirm-button
+  confirm-button-text="确认"
+  bind:close="onClose"
+>
+<view class="bg">
+<image class="img" 
+       src="../../../images/wps.png"
+       mode="widthFill" style="opacity:{{0.4}}"/>
+<view class="content" >
+    <text>\n</text>
+    <text>\n</text>
+    <text>学生姓名：{{student_name1}}\n</text>
+    <text>学号：{{student_number1}}\n</text>
+    <text>手机号：{{phone1}}\n</text>
+    <text>\n</text>
+    <text>\n</text>
+</view>
+
+</view>  
+
+</van-dialog>

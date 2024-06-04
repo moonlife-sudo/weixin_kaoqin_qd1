@@ -1,0 +1,108 @@
+
+<template name="tclassTemplate">
+  <block wx:for="{{ submittedData }}" wx:key="index">
+   <view class="container">
+    <view class="flex-col items-start relative section_2 pos_2" data-index="{{index}}"bindtap="onClick_2" >
+      <text class="font_1 text_2" >{{item.className}}</text>
+      <text class="font_2" >班级号：{{item.classNumber}}</text>
+      <text class="font_2" >上课地点：{{item.addressName}}</text>
+    </view>
+    <view class="flex-col justify-start items-center text-wrapper pos"  data-index="{{index}}" bindtap="onClick_1">
+        <text class="font_3" >修改</text>
+    </view>
+  </view>
+  </block>
+</template>
+
+<view class="flex-col page">
+  <view class="container_1">
+  <view class="flex-row items-center group space-x-6">
+    <image
+      class="shrink-0 image"
+      src="../../../images/psc.png"
+      bind:tap="onClick_2_1"
+    />
+    <view class="flex-row justify-between items-center flex-auto section">
+      
+      <view class="flex-row space-x-10">
+        <image
+          class="shrink-0 image_2"
+          src="../../../images/16892395451950173387.png"
+        />
+        <view class="field-container">
+          <van-cell-group>
+   <van-field
+    value="{{ value }}"
+    placeholder="请输入班级名称"
+    border="{{ false }}"
+    bind:blur="onChange"
+    
+  />
+</van-cell-group>
+      </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="container">
+  <template is="tclassTemplate" data="{{ submittedData: submittedData }}"></template>
+  </view>
+  <view class="flex-col justify-start relative group_2">
+    <view class="section_4"></view>    
+    <image
+          class="image_9 pos_6"
+          src="../../../images/16893000787414694779.png"
+          bindtap="onClick"
+        />
+  </view>
+</view>
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+
+<van-dialog  
+  use-slot
+  title="添加班级信息"
+  show="{{ show }}"
+  showConfirmButton="true"
+  confirm-button-text="确认"
+  showCancelButton="true"
+  cancel-button-text="取消"
+  bind:confirm="onConfirm"
+  bind:close="onCancel"
+>  
+<van-cell-group>
+  <van-field
+    value="{{ class_value}}"
+    placeholder="请输入课程名（3-20字符）"
+    border="{{ false }}"
+    bind:blur="onBlur"
+  />
+</van-cell-group>
+<van-cell-group>
+  <van-field
+    value="{{ teacher_value}}"
+    placeholder="请输入上课地点（5-20字符）"
+    border="{{ false }}"
+    bind:blur="onBlur_1"
+  />
+</van-cell-group>
+</van-dialog>
+
+<van-dialog  
+  use-slot
+  title="班级二维码"
+  show="{{ show_1 }}"
+  showConfirmButton="true"
+  confirm-button-text="确认"
+  showCancelButton="true"
+  cancel-button-text="取消"
+  bind:confirm="onConfirm_1"
+  bind:close="onCancel_1"
+>  
+<view class="dialog-container">
+  <canvas canvas-id="qrcodeCanvas" style="width: 135px; height: 150px;"></canvas>
+  </view>
+</van-dialog>
+
+
+

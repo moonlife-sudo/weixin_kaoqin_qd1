@@ -1,0 +1,10 @@
+{
+ 
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  
+    "usingComponents": {
+      "Privacy": "/component/privacy/privacy"
+    }
+  
+}

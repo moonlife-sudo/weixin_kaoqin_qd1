@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "注册界面",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index"
+  }
+  
+}

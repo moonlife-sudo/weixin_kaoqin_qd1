@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "最新发布",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

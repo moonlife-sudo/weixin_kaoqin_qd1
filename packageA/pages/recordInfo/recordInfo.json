@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "打卡详情",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "ec-canvas": "../../../ec-canvas/ec-canvas",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+      "van-cell": "@vant/weapp/cell/index",
+      "van-cell-group": "@vant/weapp/cell-group/index",
+      "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+      "van-button": "@vant/weapp/button/index"
+      
+},
+"enablePullDownRefresh": true
+}

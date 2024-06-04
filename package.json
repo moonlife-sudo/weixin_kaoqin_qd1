@@ -1,0 +1,16 @@
+{
+  "name": "code-kaoqin-20230714112623",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vant/weapp": "^1.10.21",
+    "moment": "^2.29.4",
+    "qrcode-generator": "^1.4.4"
+  }
+}

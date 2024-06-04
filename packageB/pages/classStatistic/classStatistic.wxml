@@ -1,0 +1,79 @@
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+<scroll-view scroll-y="{{true}}" bindscrolltoupper="onPullDownRefresh"bindrefresherrefresh="onPullDownRefresh"
+>
+
+<view class="flex-col page">
+  <view class="flex-col flex-auto group">
+    <view class="my-chart">
+  <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec}}"class='chart-canvas'  ></ec-canvas>
+</view>
+    <view class="flex-row items-center group_2 space-x-12">
+
+    </view>
+
+    <view class="flex-col justify-start items-center self-center section_3">
+
+    </view>
+    <view class="flex-col group_3 space-y-8">
+      <van-collapse value="{{ activeNames }}" bind:change="onChange" accordion="true">
+    <van-collapse-item title="缺课" name="1" size="large">
+    <view>
+    <text class="queke" space="ensp">  姓名             学号           次数    \n</text>
+    <block wx:for="{{absentInfos}}" wx:key="index">
+  <view class="row">
+    <text class="studentName">{{item.studentName}}</text>
+    <text class="studentNumber">{{item.studentNumber}}</text>
+    <text class="count">{{item.count}}</text>
+  </view>
+</block>
+    </view>
+  </van-collapse-item>
+  <van-collapse-item title="请假" name="2" size="large">
+    <view>
+    <text class="queke" space="ensp">  姓名             学号           次数    \n</text>
+    <block wx:for="{{leaveInfos}}" wx:key="index">
+      <view class="row">
+    <text class="studentName">{{item.studentName}}</text>
+    <text class="studentNumber">{{item.studentNumber}}</text>
+    <text class="count">{{item.count}}</text>
+  </view>
+  </block>
+    </view>
+  </van-collapse-item>
+  <van-collapse-item title="迟到" name="3" size="large">
+    <view>
+    <text class="queke" space="ensp">  姓名             学号           次数    \n</text>
+    <block wx:for="{{lateInfos}}" wx:key="index">
+      <view class="row">
+    <text class="studentName">{{item.studentName}}</text>
+    <text class="studentNumber">{{item.studentNumber}}</text>
+    <text class="count">{{item.count}}</text>
+  </view>
+  </block>
+    </view>
+  </van-collapse-item>
+  <van-collapse-item title="早退" name="4" size="large">
+    <view class="bg">
+    <text class="queke" space="ensp">  姓名             学号           次数    \n</text>
+    <block wx:for="{{earlyInfos}}" wx:key="index">
+      <view class="row">
+    <text class="studentName">{{item.studentName}}</text>
+    <text class="studentNumber">{{item.studentNumber}}</text>
+    <text class="count">{{item.count}}</text>
+  </view>
+  </block>
+ 
+    </view>
+  </van-collapse-item>
+</van-collapse>
+    </view>
+
+    <view class="test"></view>
+
+    <view class="flex-row justify-between self-center equal-division">
+      
+     
+    </view>
+  </view>
+</view>
+</scroll-view>

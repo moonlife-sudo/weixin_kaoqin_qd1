@@ -1,0 +1,582 @@
+.page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 99%;
+}
+/* 样式设置 */
+.button-container {
+  background-color: #3498db; /* 蓝色背景色 */
+  border-radius: 15rpx; /* 圆角 */
+  padding: 10rpx 20rpx; /* 内边距 */
+  display: inline-block; /* 内联块级元素，适应文本宽度 */
+  position: absolute; /* 使用绝对定位 */
+  bottom: 35rpx; /* 距离底部的距离 */
+  right: 30rpx; /* 距离右侧的距离 */
+ 
+}
+
+.button-text {
+  color: white; /* 文本颜色为白色 */
+  font-size: 16px;
+}
+
+.pos_16{
+  position: absolute;
+  margin-top: 12rpx;
+  right: 60rpx; /* 调整右侧距离 */
+  display: flex; /* 使用 flex 布局 */
+  align-items: center; /* 垂直居中 */
+}
+.text_18{
+  padding-left:45rpx;
+  padding-top: 50rpx;
+}
+.container {
+  margin-top: -12rpx; /* 调整为适当的值，控制与页面顶部的距离 */
+}
+
+.namestyle{
+  margin-left:20rpx;
+}
+.pos_20{
+  margin-left:30rpx;
+}
+.my-chart{
+	width: 800rpx;
+	height: 1000rpx;
+}
+
+ec-canvas{
+	width: 100%;
+	height: 100%;
+}
+.group {
+  padding: 0 66.88rpx;
+}
+.space-y-16 > view:not(:first-child),
+.space-y-16 > text:not(:first-child),
+.space-y-16 > image:not(:first-child) {
+  margin-top: 40.91rpx;
+}
+.font_2 {
+  font-size: 20.93rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 19.19rpx;
+  color: #b8b8b8;
+}
+.text_2 {
+  line-height: 18.31rpx;
+}
+.text_3 {
+  margin-right: 216.28rpx;
+}
+
+.group_2 {
+  padding: 5.23rpx;
+ margin-right: 200rpx;
+}
+.space-x-59 > view:not(:first-child),
+.space-x-59 > text:not(:first-child),
+.space-x-59 > image:not(:first-child) {
+  margin-left: 102.91rpx;
+}
+.font_3 {
+  font-size: 27.91rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 25.29rpx;
+  color: #323643;
+}
+.text_4 {
+  line-height: 20.06rpx;
+}
+.space-x-22 > view:not(:first-child),
+.space-x-22 > text:not(:first-child),
+.space-x-22 > image:not(:first-child) {
+  margin-left: 38.37rpx;
+}
+.image_2 {
+  width: 22.67rpx;
+  height: 24.42rpx;
+}
+.font_1 {
+  font-size: 34.88rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 33.14rpx;
+  color: #092724;
+}
+.font_2 {
+  font-size: 20.93rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 19.19rpx;
+  color: #b8b8b8;
+}
+.font_3 {
+  font-size: 27.91rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 25.29rpx;
+  color: #323643;
+}
+.group_3 {
+  padding-top: 29.65rpx;
+  overflow-y: auto;
+}
+.group_4 {
+  padding: 0 64.53rpx;
+}
+.divider {
+  padding: 0 8.72rpx;
+}
+.image_3 {
+  width: 280.81rpx;
+  height: 1.74rpx;
+}
+.image_4 {
+  margin-right: 6.98rpx;
+}
+.text_5 {
+  margin-top: 20.93rpx;
+}
+.group_5 {
+  padding: 0 13.95rpx;
+  margin-right:190rpx ;
+}
+.view {
+  margin-top: 27.91rpx;
+}
+.space-x-20 > view:not(:first-child),
+.space-x-20 > text:not(:first-child),
+.space-x-20 > image:not(:first-child) {
+  margin-left: 34.88rpx;
+}
+.section {
+  padding: 3.49rpx 13.95rpx 10.47rpx;
+  background-color: #ffffff00;
+  border-radius: 12.21rpx;
+  height: 45.35rpx;
+  border: solid 1.74rpx #323643;
+}
+.space-x-16 > view:not(:first-child),
+.space-x-16 > text:not(:first-child),
+.space-x-16 > image:not(:first-child) {
+  margin-left: 27.91rpx;
+}
+.font_4 {
+  font-size: 24.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 22.67rpx;
+  font-weight: 700;
+  color: #475669;
+}
+.font_5 {
+  font-size: 24.42rpx;
+  font-family: 思源黑体;
+  line-height: 22.67rpx;
+  font-weight: 700;
+  color: #475669;
+}
+.text_6 {
+  color: #323643;
+  line-height: 20.34rpx;
+}
+.image_6 {
+  margin-right: 3.49rpx;
+  width: 22.67rpx;
+  height: 22.67rpx;
+}
+.group_6 {
+  margin-right: 3.49rpx;
+  padding: 3.49rpx 0 17.44rpx;
+  width: 113.37rpx;
+}
+.image_5 {
+  width: 113.37rpx;
+  height: 47.09rpx;
+}
+.pos {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.image_7 {
+  width: 594.77rpx;
+  height: 1.74rpx;
+}
+.image_8 {
+  margin: 20.93rpx 17.44rpx 0 8.72rpx;
+}
+.text_7 {
+  margin-left: 8.72rpx;
+  margin-top: 27.91rpx;
+}
+.view_2 {
+  margin-top: 31.4rpx;
+}
+.section_2 {
+  padding: 0 17.44rpx 10.47rpx;
+  background-color: #ffffff00;
+  border-radius: 12.21rpx;
+  width: 258.14rpx;
+  height: 45.35rpx;
+  border: solid 1.74rpx #323643;
+}
+.font_6 {
+  font-size: 30.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 22.67rpx;
+  font-weight: 700;
+  color: #000000a6;
+}
+.image_9 {
+  margin-top: -6.98rpx;
+  width: 20.93rpx;
+  height: 17.44rpx;
+}
+.text-wrapper {
+  padding-bottom: 20.93rpx;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAA2CAYAAAAcetFXAAAABHNCSVQICAgIfAhkiAAAAqlJREFUeJztneuRozAQhBs2ETJhHMpFIjmSq4tEIhNnwv5AwoOQvWsOMEb9Valss1DGRW+PHsxQYR0ktDbZRvbDh9dOffa5HfdCALjQerbDNov/+GetFh7n9JeKDG+NMUi3kX3w3k9er9drussVg1g2xUKpU0R651xPjolzrjfG5BxlE8ZQQmF8HolQVhfJKA4K43NJROJWFYeIvPv3kZUQkdVEQnGclDVEYimOc/MbkTwa5loABgD6vl8qMPIBVNUogewwuM4cIwji0PMa5Jw4N5qHQWZC7StzzF8AjTEG1trNTowcg6ZpAABd1wFAA+Cf/nsaYiwYWorkcrnEWdgL1BpOGmIYWgpFXfPJxdcOYkH3KJqci2gHaQG6R8nkXCQ6iAXdg2DuIpM+CN2DKAxwDzEtwHs4yNwkYojpAYYXMqBmV6saYXqV7kEiSgsy9kHatn3LyZDjobRwFwgdhESUFtoa01QFQibkVnMJGanAEQzJEEYyngIhWeJQlyGGPKXGm/M3ybEZHSSm7BGitOAZYshTKBDyjK5GqCfBEEMiWgtjJzXc1UzIRAtc7icz0uV+ILgIwwzRIxgg6aRmqtKQwlAC6YC7QKgMAmBuEjrEeO89w0zBqFRbj3CnoU6cEgBORHRCLymIXKa/7oN40EWKJUnUHz+kydsCukiRPKoTkpZ/uAGQ2+3WALxPtRSstXFyzAP489P+AlY0LIak8qGkYmAJqsJZUoIKYUcPDMm85Jyoa7u4TDfLYJ4U1kolD1lTHBORAOiNMe/+fWQhzrlNSnFHLEXymTjntGtsIo6ZSKJQOBQ+LhlhvPykh6UPFLJIquHFwiNxco2TbPuil0fiimyyZOIxlJXaDUHiKGyHaw7J08FeZamDpIg6iVZtI/vh1fsOKz3U8Bvqp9Pm9J0LVgAAAABJRU5ErkJggg==');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 118.6rpx;
+  height: 47.09rpx;
+}
+.image_10 {
+  margin: 17.44rpx 17.44rpx 0 8.72rpx;
+}
+.group_7 {
+  margin-top: 104.65rpx;
+  padding: 0 52.33rpx;
+}
+.space-x-11 > view:not(:first-child),
+.space-x-11 > text:not(:first-child),
+.space-x-11 > image:not(:first-child) {
+  margin-left: 19.19rpx;
+}
+.section_3 {
+  background-color: #2ec4b6;
+  border-radius: 34.88rpx;
+  width: 47.09rpx;
+  height: 22.67rpx;
+}
+.font_7 {
+  font-size: 24.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 22.67rpx;
+  color: #000000;
+}
+.text_8 {
+  font-size: 26.16rpx;
+  line-height: 23.55rpx;
+}
+.section_4 {
+  background-color: #f6f6f6;
+  border-radius: 34.88rpx;
+  width: 47.09rpx;
+  height: 22.67rpx;
+}
+.text_9 {
+  font-size: 26.16rpx;
+  line-height: 23.55rpx;
+}
+.section_5 {
+  margin-top: 69.77rpx;
+  padding: 76.74rpx 0;
+  background-color: #2ec4b6;
+  border-radius: 50%;
+  width: 365.41rpx;
+}
+.text-wrapper_2 {
+  padding: 66.28rpx 0 31.4rpx;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20.93rpx 1.74rpx #00000014;
+  border-radius: 50%;
+  width: 208.43rpx;
+}
+.text_10 {
+  color: #000000;
+  font-size: 43.6rpx;
+  font-family: Roboto;
+  line-height: 52.33rpx;
+  text-align: center;
+  width: 47.09rpx;
+}
+.group_8 {
+  margin-top: -60rpx;
+}
+.text_11 {
+  margin-left: 52.33rpx;
+}
+.group_9 {
+  margin-top: 34.88rpx;
+}
+.text-wrapper_3 {
+  padding: 20.93rpx 0 31.4rpx;
+  background-color: #e5e9f2;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, 1.74rpx 0px 0px #e0e6ed inset, 0px 1.74rpx 0px #e0e6ed inset;
+  width: 175.29rpx;
+  height: 76.74rpx;
+}
+.text_12 {
+  margin-left: 27.91rpx;
+  font-size: 22.67rpx;
+  line-height: 20.93rpx;
+}
+.text-wrapper_4 {
+  padding: 20.93rpx 0 31.4rpx;
+  background-color: #e5e9f2;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, 0px 1.74rpx 0px #e0e6ed inset;
+  width: 175.29rpx;
+  height: 76.74rpx;
+}
+.text_13 {
+  margin-left: 27.91rpx;
+  font-size: 22.67rpx;
+  line-height: 20.93rpx;
+}
+.text-wrapper_5 {
+  padding: 20.93rpx 0 31.4rpx;
+  background-color: #e5e9f2;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, -1.74rpx 0px 0px #e0e6ed inset, 0px 1.74rpx 0px #e0e6ed inset;
+  height: 76.74rpx;
+}
+.text-wrapper_6 {
+  padding: 30.52rpx 0 30.52rpx;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset;
+  width: 170.99rpx;
+  height:77rpx;
+}
+.text-wrapper_7 {
+  padding: 25.52rpx 0rpx 30.52rpx;
+  background-color:rgb(255, 255, 255);
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset;
+  width: 190.99rpx;
+  height:77rpx;
+}
+.section_6 {
+  padding: 8.72rpx 0 13.95rpx;
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset;
+  width: 400.29rpx;
+  height:77rpx;
+}
+.text_14 {
+  margin-left: 27.91rpx;
+  font-size: 22.67rpx;
+  line-height: 21.8rpx;
+}
+.text_34 {
+  margin-left: 270.91rpx;
+  font-size: 22.67rpx;
+  margin-top: -17rpx;
+  line-height: 10.8rpx;
+}
+.group_10 {
+  height:10rpx;
+  padding-bottom: 100rpx;
+}
+.group_11 {
+  width: 350.58rpx;
+}
+
+.font_9 {
+  font-size: 24.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 22.67rpx;
+  color: #1f2d3d;
+}
+.text_16 {
+  margin-left: 24.42rpx;
+  margin-top: 4rpx;
+  font-size: 30.67rpx;
+  line-height: 20.93rpx;
+}
+
+.pos_2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.text_17 {
+
+  font-size: 25.67rpx;
+  line-height: 16.57rpx;
+}
+.group_12 {
+  padding-left: 13.95rpx;
+}
+.pos_3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.section_7 {
+  margin-top:10rpx;
+  margin-left: 26.16rpx;
+  padding: 6.98rpx 20.93rpx 20.93rpx 27.91rpx;
+  background-color: #ffffff;
+  border-radius: 12.21rpx;
+  width: 181.4rpx;
+  border: solid 1.74rpx #00000026;
+ 
+}
+.image_11 {
+  margin-top: -0.98rpx;
+  width: 20.93rpx;
+  height: 13.95rpx;
+  
+}
+.section_11 {
+  margin-right: 24.42rpx;
+  margin-top: 68.02rpx;
+  padding: 12.21rpx 160.47rpx 0;
+  background-color: #ffffff;
+}
+.group_13 {
+  width: 175.29rpx;
+}
+.group_14 {
+  padding-top: 52.33rpx;
+}
+.image_12 {
+  margin-left: 20.93rpx;
+  width: 34.88rpx;
+  height: 34.88rpx;
+}
+.text-wrapper_8 {
+  padding: 20.93rpx 0 38.37rpx;
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset;
+  width: 175.29rpx;
+}
+.pos_9 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.text_18 {
+  margin-left: 27.91rpx;
+  font-size: 22.67rpx;
+  line-height: 20.93rpx;
+}
+.section_14 {
+  margin-top: -6.98rpx;
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset;
+  height: 74.13rpx;
+}
+.image_13 {
+  margin-right: 20.93rpx;
+  width: 36.63rpx;
+  height: 34.88rpx;
+}
+.section_10 {
+  padding: 10.47rpx 0;
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, -1.74rpx 0px 0px #e0e6ed inset;
+  width: 400.29rpx;
+}
+.pos_10 {
+  position: absolute;
+  right: 0;
+  top: 160.47rpx;
+}
+.section_12 {
+  margin-left: 27.91rpx;
+  padding: 6.98rpx 20.93rpx 17.44rpx 27.91rpx;
+  background-color: #ffffff;
+  border-radius: 12.21rpx;
+  width: 181.4rpx;
+  border: solid 1.74rpx #00000026;
+}
+.section_15 {
+  padding: 10.47rpx 0 6.98rpx;
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, -1.74rpx 0px 0px #e0e6ed inset;
+  width: 400.29rpx;
+}
+.pos_12 {
+  position: absolute;
+  right: 0;
+  top: 240.7rpx;
+}
+.pos_6 {
+  position: absolute;
+  left: 175.29rpx;
+  top: 80.23rpx;
+}
+.section_9 {
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, 1.74rpx 0px 0px #e0e6ed inset;
+  width: 175.29rpx;
+  height: 80.23rpx;
+}
+.pos_5 {
+  position: absolute;
+  left: 0;
+  top: 80.23rpx;
+}
+.pos_8 {
+  position: absolute;
+  left: 0;
+  top: 160.47rpx;
+}
+.section_13 {
+  background-color: #ffffff;
+  box-shadow: 0px -1.74rpx 0px #e0e6ed inset, 1.74rpx 0px 0px #e0e6ed inset;
+  width: 175.29rpx;
+  height: 74.13rpx;
+}
+.pos_11 {
+  position: absolute;
+  left: 0;
+  top: 240.7rpx;
+}
+.pos_7 {
+  position: absolute;
+  right: 0;
+  top: 81.98rpx;
+}
+.section_8 {
+  padding-bottom: 17.44rpx;
+  background-color: #ffffff;
+  box-shadow: 0px 15.7rpx 48.84rpx 13.95rpx #0000000d, 0px 10.47rpx 27.91rpx #00000014,
+    0px 5.23rpx 10.47rpx -6.98rpx #0000001f;
+  width: 111.63rpx;
+  height: 296.51rpx;
+}
+.pos_4 {
+  position: absolute;
+  right: 67.15rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.font_8 {
+  font-size: 24.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 59.3rpx;
+  font-weight: 700;
+  color: #000000a6;
+}
+.text_15 {
+  margin-top: -15.7rpx;
+}
+.my-chart {
+  
+  width: 100%;
+  height: 700rpx;
+}
+.chart-canvas {
+  width: 100%;
+  height: 100%;
+  
+}

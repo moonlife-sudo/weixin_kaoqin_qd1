@@ -1,0 +1,68 @@
+<template name="trecordTemplate">
+  <block wx:for="{{ submittedData }}" wx:key="index">
+  <view class="flex-row justify-between items-center group_3">
+    <view class="flex-row items-center">
+      <view class="flex-col justify-start items-center image-wrapper_2">
+        <image
+          class="image_4"
+          src="{{item.image_url}}"
+        />
+      </view>
+      <view class="flex-col items-start ml-17">
+        <text class="font text_3"bindtap="OnClick" data-item="{{item}}" >{{item.infoname}}</text>
+     
+      </view>
+    </view>
+    <image
+      class="image_5"
+      src="../../../images/gengduo.png"
+    />
+  </view>
+</block>
+</template>
+
+
+
+<view class="flex-col page">
+  <view class="flex-col">
+    <view class="flex-col justify-start items-start self-stretch image-wrapper">
+    
+    </view>
+  </view>
+  <view class="flex-col group">
+    <view class="flex-row section">
+      <image
+        class="self-center image_2"
+        src="../../../images/search.png"
+      />
+      <input class="ml-12 self-start text_2" placeholder="搜索" bindinput="handleInput"bindconfirm="bindConfirm" />
+
+     
+     
+    </view>
+    <view class="mt-20 flex-row equal-division">
+      <view class="flex-col group_2 equal-division-item">
+        <image
+          class="self-start image_3"
+          src="../../../images/word.png"
+        />
+        <text class="self-center font mt-11">word</text>
+      </view>
+      <view class="flex-col group_2 equal-division-item">
+        <image
+          class="self-start image_3"
+          src="../../../images/ppd.png"
+        />
+        <text class="mt-10 self-center font">pdf</text>
+      </view>
+      <view class="flex-col group_2 equal-division-item">
+        <image
+          class="self-start image_3"
+          src="../../../images/ppt.png"
+        />
+        <text class="mt-10 self-center font">ppt</text>
+      </view>
+    </view>
+  </view>
+  <template is="trecordTemplate" data="{{ submittedData: submittedData }}"></template>
+</view>

@@ -1,0 +1,117 @@
+<view class="flex-col justify-start relative page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="flex-col justify-start relative group">
+    <view class="flex-col justify-start section">
+      <view class="flex-col section_2">
+        <view class="flex-col justify-start items-start relative group_2">
+        </view>
+        <view class="flex-col section_3">
+        <text class="font_1 text_3">课程选择</text>
+        <view class="picker">
+        <view class="btn">
+        <text class="text_0" bindtap="onClick_popup">{{choose_name}}</text>
+        </view>
+        <van-popup
+        show="{{ show_popup }}"
+        position="bottom"
+        custom-style="height: 40%;overflow:hidden;"
+        bind:close="onClose_popup">
+        <van-picker
+        show-toolbar="true"
+        title="请选择班级"
+       columns="{{ columns }}"
+       default-index="{{ defaultIndex }}"
+       bind:cancel="onCancel"
+       bind:change="onChange"
+       bind:confirm="onConfirm">
+     
+      </van-picker>
+     </van-popup>
+      </view>
+          <text class="self-start font_1 text_4">打卡时间</text>
+          <view class="flex-col group_3 space-y-23">
+            <view class="section_5">
+                <text class="font_3"style="margin-right:70rpx;"data-type="start" bind:tap="onImageClick">{{ startTime || (selectedType === 'start' ? selectedTime : '开始时间') }}</text>
+                  <text class="self-start font_3 text_6">→</text>
+                  <text class="font_3"style="margin-left:70rpx;"data-type="end" bind:tap="onImageClick">{{ endTime || (selectedType === 'end' ? selectedTime : '结束时间') }}</text>
+            </view>
+            <view class="map-container">
+            <text class="self-start font_1">打卡范围（当前手机位置范围20米）</text>
+            </view>
+            <map id="map" bindtap="handleShowModal"
+   longitude="{{longitude}}"  
+   latitude="{{latitude}}"    
+   show-location="true"
+   style="width: 600rpx; height: 600rpx; margin: 0 auto;" >     
+   </map>
+          </view>
+          <view class="flex-col group_5 space-y-6">
+            <view class="flex-row justify-center items-center self-center section_7 space-x-2" bindtap= "SUB">
+              <text class="text_9"decode="{{true}}">{{title}}</text>
+            
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <image
+      class="image_2 pos_4"
+      src="../../../images/16896636742436788170.png"
+    />
+    <image
+      class="image_2 pos_9"
+      src="../../../images/16892967237468855194.png"
+    />
+    <image
+      class="image pos"
+      src="../../../images/16892967237499376060.png"
+    />
+    <image
+      class="image pos_11"
+      src="../../../images/16892967237499376060.png"
+    />
+    <image
+      class="image pos_10"
+      src="../../../images/16892967240758704716.png"
+    />
+    <image
+      class="image pos_3"
+      src="../../../images/16892967240711624460.png"
+    />
+    <image
+      class="image pos_8"
+      src="../../../images/16892967240758704716.png"
+    />
+    <image
+      class="image pos_2"
+      src="../../../images/16892967237506040863.png"
+    />
+    <image
+      class="image pos_5"
+      src="../../../images/16892967240711624460.png"
+    />
+    <image
+      class="image pos_7"
+      src="../../../images/16896636742490530839.png"
+    />
+  </view>
+ 
+
+
+</view>
+
+<van-popup show="{{show}}"
+  position="bottom"
+   bind:close="onClose"
+    round
+     custom-style="height: 40%;">
+    <van-datetime-picker type="datetime"
+     type="time" 
+     min-date="{{minDate}}"
+    max-date="{{maxDate}}"
+     value="{{selectedTime}}"
+      bind:confirm="onTimeConfirm"
+       bind:cancel="onTimeCancel"
+       bind:formatter="formatter"
+    bind:filter="filter" />
+  </van-popup>

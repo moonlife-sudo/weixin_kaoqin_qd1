@@ -1,0 +1,22 @@
+<view class="flex-col page" wx:if='{{showThisView}}'>
+  <Privacy />
+  <view class="flex-col flex-auto group_2">
+    <text class="self-start text_3">请选择您的身份</text>
+    <text class="self-start text_3" style="color: red;">注意：选择后不能修改</text>
+    <view class="line_1"></view>
+    <view class="flex-col justify-start items-start relative group_3">
+      <view class="section"></view>
+      <view class="section_2 pos"></view>
+    </view>
+    <view class="flex-row group_4 space-x-29">
+      <view class="flex-col justify-start items-start text-wrapper"data-type="student" bindtap="onClick">
+        <text class="font_1 text_4">学生</text>
+      </view>
+      <view class="flex-col justify-start items-start text-wrapper view"data-type="teacher" bindtap="onClick_1">
+        <text class="font_1 text_4 text_5">教师</text>
+      </view>
+    </view>
+  
+  </view>
+ 
+</view>

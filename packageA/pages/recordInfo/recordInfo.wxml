@@ -1,0 +1,118 @@
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+<scroll-view scroll-y="{{true}}" bindscrolltoupper="onPullDownRefresh"bindrefresherrefresh="onPullDownRefresh"
+>
+<template name="recordInfoTemplate">
+  <block wx:for="{{ submittedData }}" wx:key="index">
+  
+   <view class="container">
+
+    <view class="flex-col justify-start items-start relative group_10">
+      <view class="flex-col justify-start items-end relative group_11">
+        <view class="flex-col justify-start items-start relative text-wrapper_7">
+          <text class="font_9 text_16">{{item.student_Name}}</text>
+        </view>
+        <view class="flex-col justify-start items-center text-wrapper_6 pos_2">
+          <text class="font_9 text_17">{{item.student_Number}}</text>
+         
+        </view>
+        
+      </view>
+  
+      <view class="flex-col group_12 pos_3">
+        <view class=' pos_16 button-container'bindtap="modify_state"data-index="{{index}}"><text class="button-text" >请假</text></view> 
+        <view class="flex-col justify-start items-start self-end section_6">
+          <view class="flex-col section_7">
+            <text class="font_9 text_17">{{item.student_State}}</text>
+          </view>
+          
+        </view>
+        
+      </view>
+    </view>
+  </view>
+  </block>
+</template>
+
+<van-dialog
+  use-slot
+ 
+  title="是否将该学生修改为请假"
+  show="{{ show_1 }}"
+  show-cancel-button
+  show-confirm-button
+  bind:close="onClose_3"
+  bind:confirm="onConfirm_3"
+>
+</van-dialog>
+<view class="flex-col page">
+<view class="flex-col flex-auto group_3">
+  <view class="flex-col group space-y-16">
+    <view class="flex-row justify-between">
+      <text class="font_2 text_2">课程ID</text>
+      <text class="font_2 text_3">课程名称</text>
+    </view>
+    <view class="flex-row justify-between items-center group_2">
+      <view class="flex-row self-stretch space-x-59">
+        <text class="self-start font_3 text_4">{{classNumber}}</text>
+        <view class="flex-row items-center shrink-0 self-stretch space-x-22">
+          <image class="shrink-0 image_2" src="../../../images/16892395538281797105.png" />
+          
+        </view>
+      </view>
+      <view class="namestyle">
+      <text class="font_3 pos_20">{{className}}</text>
+      <image class="shrink-1 image_2" src="../../../images/16892395538281797105.png" />
+      </view>
+    </view>
+  </view>
+  <view class="flex-col group_4">
+    <view class="flex-col divider">
+      <image class="self-start image_3" src="../../../images/16892395536956572070.png" />
+      <image class="self-end image_3 image_4" src="../../../images/16892395536956572070.png" />
+    </view>
+    <text class="self-start font_2 text_5">打卡时间</text>
+    <view class="flex-row group_5 view space-x-20">
+  <view class="flex-row justify-between items-center flex-auto section">
+    <view class="flex-row space-x-16">
+      <text class="font_4" >{{ start_time}}</text>
+      <text class="self-start font_5 text_6">→</text>
+      <text class="font_4">{{ final_time}}</text>
+    </view>
+    <image class="image_6" src="../../../images/16892395540014472408.png" />
+  </view>
+  
+
+      <view class="flex-col justify-start items-center shrink-0 relative group_6">
+
+      </view>
+    </view>
+    
+    
+    <image class="image_7 image_10" src="../../../images/16892395538244791525.png" />
+  </view>
+  <text class='text_18'>班级总人数：{{totalNumber}}    {{startNotCallNumber}}    {{endNotCallNumber}}</text>
+  <view class="my-chart">
+  
+  <ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec}}"class='chart-canvas'></ec-canvas>
+</view>
+  <view class="flex-col group_8">
+    <text class="self-start font_1 text_11">异常考勤名单</text>
+    <view class="flex-row group_9">
+      <view class="flex-col justify-start items-start shrink-0 relative text-wrapper_3">
+        <text class="font_5 text_12">学号</text>
+      </view>
+      <view class="flex-col justify-start items-start shrink-0 relative text-wrapper_4">
+        <text class="font_5 text_13">姓名</text>
+      </view>
+      <view class="flex-col justify-start items-start flex-auto text-wrapper_5">
+        <text class="font_5 text_14">考勤情况统计</text>
+        <text class="font_5 text_34">操作</text>
+      </view>
+    </view>
+    <view class="container">
+  <template is="recordInfoTemplate" data="{{ submittedData: submittedData }}"></template>
+  </view>
+      </view>
+      </view>
+</view>
+</scroll-view>

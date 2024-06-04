@@ -1,0 +1,116 @@
+.mt-11 {
+  margin-top: 22rpx;
+  margin-left: -30rpx;
+}
+.ml-17 {
+  margin-left: 34rpx;
+}
+.mt-7 {
+  margin-top: 14rpx;
+}
+.mt-10 {
+  margin-top: 20rpx;
+  margin-left: -25rpx;
+}
+.self-center {
+  align-self: center;
+}
+.page {
+  padding-bottom: 792rpx;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.image-wrapper {
+  overflow: hidden;
+  height: 144rpx;
+}
+.image {
+  margin-left: 0rpx;
+  margin-top: 0rpx;
+  
+  
+}
+.shrink-0 {
+  flex-shrink: 0;
+}
+.text {
+  margin-left: 50rpx;
+  color: #2b2b2b;
+  font-size: 68rpx;
+  font-family: 思源黑体;
+  line-height: 62.42rpx;
+}
+.group {
+  margin-top: -100rpx;
+  padding: 0 50rpx;
+}
+.section {
+  padding: 20rpx 30rpx 26rpx;
+  background-color: #f4f4f4;
+  border-radius: 47rpx;
+
+  margin-bottom: 40rpx;
+}
+.image_2 {
+  opacity: 0.5;
+  width: 34rpx;
+  height: 36rpx;
+}
+.text_2 {
+  color: #00000080;
+  font-size: 32rpx;
+  font-family: 思源黑体;
+  line-height: 29.44rpx;
+  opacity: 0.5;
+}
+.equal-division {
+  margin: 0 28rpx;
+}
+.group_2 {
+  flex: 1 1 199rpx;
+}
+.equal-division-item {
+  padding: 12rpx 16rpx;
+}
+.image_3 {
+  width: 144rpx;
+  height: 144rpx;
+}
+.font {
+  font-size: 30rpx;
+  font-family: 思源黑体;
+  line-height: 24.3rpx;
+  color: #242833;
+}
+
+.group_3 {
+  margin-top: 64rpx;
+  padding: 0 48rpx;
+}
+.image-wrapper_2 {
+  padding: 32rpx 0;
+  background-color: #49afff26;
+  border-radius: 50%;
+  width: 104rpx;
+  height: 104rpx;
+}
+.image_4 {
+  width: 36rpx;
+  height: 40rpx;
+}
+.text_3 {
+  font-size: 32rpx;
+  line-height: 33.28rpx;
+}
+.text_4 {
+  font-size: 28rpx;
+  line-height: 28.56rpx;
+}
+.image_5 {
+  opacity: 0.5;
+  width: 8rpx;
+  height: 36rpx;
+}

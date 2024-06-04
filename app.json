@@ -1,0 +1,54 @@
+{
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于寻找附近的检测点"
+    }
+  },
+  "requiredPrivateInfos": [
+    "getLocation"
+  ],
+  "pages": [
+    "pages/zhuye/zhuye"
+  ],
+  "subpackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/recordInfo/recordInfo"
+      ],
+      "independent": false
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/classStatistic/classStatistic"
+      ],
+      "independent": false
+    },
+    {
+      "root": "packageC",
+      "pages": [
+        "pages/tRecord/tRecord",
+        "pages/tClass/tClass",
+        "pages/sClassInfo/sClassInfo",
+        "pages/modifyClassInfo/modifyClassInfo",
+        "pages/sLogin/sLogin",
+        "pages/tLogin/tLogin",
+        "pages/sHistroyRecord/sHistroyRecord",
+        "pages/sPersonInfo/sPersonInfo",
+        "pages/recordPublish/recordPublish",
+        "pages/recordState1/recordState1",
+        "pages/recordState/recordState",
+        "pages/tPersonInfo/tPersonInfo",
+        "pages/modifypersonInfo",
+        "pages/modifypersoninfo/modifypersoninfo",
+        "pages/modifystudentclassinfo/modifystudentclassinfo",
+        "pages/sStudyInfo/sStudyInfo",
+        "pages/sStudyInfo/util.js",
+        "pages/sStudyInfo_1/sStudyInfo_1.js",
+        "pages/sStudyInfo_2/sStudyInfo_2"
+      ],
+      "independent": false
+    }
+  ]
+}

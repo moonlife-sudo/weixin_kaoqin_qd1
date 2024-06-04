@@ -1,0 +1,59 @@
+<view class="flex-col page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="flex-col flex-auto group">
+    <view class="flex-col group_2">
+      <view class="flex-col justify-start items-center self-start relative section">
+        <view class="section_2"></view>
+        <image
+          class="section_2 pos"
+          src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64ab9d0c5a7e3f0310bc0a17/64b7a7d6c430470012e592da/16934786105643348631.png"
+        />
+     
+      </view>
+      <view class="flex-col relative group_3">
+        <view class="flex-col justify-start items-start text-wrapper"><text class="text_2">编辑信息</text></view>
+        <view class="flex-col group_4 space-y-12">
+          <text class="self-start font_1 text_3">姓名</text>
+          <view class="flex-row justify-between items-center">
+            <text class="font_2 text_4">{{realName}}</text>
+            <image
+              class="image_3 image_4"
+              src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64ab9d0c5a7e3f0310bc0a17/64b7a7d6c430470012e592da/38ec237b6c0a4f152281c322d23b6827.png"bindtap="onClick_3"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="flex-col group_5">
+      <view class="flex-col group_6 list-item space-y-16">
+  <text class="self-start font_1 text_3">工号</text>
+  <view class="flex-row justify-between">
+    <text class="self-start font_2 text_5">{{userNumber}}</text>
+    <image
+      class="image_3"
+      src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64ab9d0c5a7e3f0310bc0a17/64b7a7d6c430470012e592da/38ec237b6c0a4f152281c322d23b6827.png"bindtap="onClick_4"
+    />
+  </view>
+</view>
+<view class="flex-col list-item group_7 space-y-10">
+  <text class="self-start font_1 text_3">电话</text>
+  <view class="flex-row justify-between items-center">
+    <text class="font_2 text_5">{{phone}}</text>
+   
+  </view>
+</view>
+      <view class="flex-row justify-between equal-division">
+        <view class="flex-col justify-start items-start equal-division-item"bindtap="onClick_2">
+          <text class="font_3 text_3 text_6">取消</text>
+        </view>
+        <view class="flex-row equal-division-item_2 space-x-19"bindtap="onClick_1">
+          <image
+            class="shrink-0 self-center image_5"
+            src="https://codefun-proj-user-res-1256085488.cos.ap-guangzhou.myqcloud.com/64ab9d0c5a7e3f0310bc0a17/64b7a7d6c430470012e592da/16934786105625692397.png"
+          />
+          <text class="self-start font_3 text_3 text_7">保存</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

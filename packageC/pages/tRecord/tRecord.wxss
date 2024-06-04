@@ -1,0 +1,219 @@
+.page {
+  overflow: hidden;
+  background-color: #ffffff;
+  width: 100%;
+  overflow-y: visible;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+
+.group_2 {
+  position: fixed;
+  top: 0;
+  left: 50%; /* 设置为页面宽度的一半，以使组件水平居中 */
+  transform: translateX(-50%); /* 通过负的50%水平偏移来水平居中 */
+  padding: 1.93rpx 27.91rpx 0;
+  border-radius: 27.91rpx 27.91rpx 27.91rpx 27.91rpx;/* 只设置顶部的边角为圆角 */
+  border: solid 1rpx #000000;
+  background-color: #ffffff; /* 设置背景颜色，以确保内容看得清楚 */
+  width: 600rpx;
+  z-index: 999; /* 设置一个较高的 z-index 值，以确保它在其他内容之上 */
+}
+
+.space-x-10 > view:not(:first-child),
+.space-x-10 > text:not(:first-child),
+.space-x-10 > image:not(:first-child) {
+  margin-left: 17.44rpx;
+}
+.image_2 {
+  width: 34.88rpx;
+  height: 34.88rpx;
+}
+.text_2 {
+  color: #697b7a;
+  font-size: 30.93rpx;
+  font-family: Poppins;
+  line-height: 19.19rpx;
+}
+.image_3 {
+  width: 34.88rpx;
+  height: 26.16rpx;
+}
+.group_3 {
+  overflow-y: auto;
+}
+.space-y-34 > view:not(:first-child),
+.space-y-34 > text:not(:first-child),
+.space-y-34 > image:not(:first-child) {
+  margin-top: 17.44rpx;
+}
+.group_4 {
+  border-radius: 0px 0px 27.91rpx 27.91rpx;
+  width: 727.91rpx;
+  height: 27.91rpx;
+ 
+}
+.group_5 {
+ 
+  padding-top: 13.95rpx;
+}
+.space-y-18 > view:not(:first-child),
+.space-y-18 > text:not(:first-child),
+.space-y-18 > image:not(:first-child) {
+  margin-top: 31.4rpx;
+  
+}
+.section {
+  padding: 20.93rpx 36.63rpx 34.88rpx;
+  background-color: #2ec4b6;
+  border-radius: 34.88rpx;
+  box-shadow: 0px 6.98rpx 22.67rpx #00000040;
+  width: 627.91rpx;
+}
+.font_1 {
+  font-size: 52.33rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 48.84rpx;
+  color: #edf5f4;
+}
+.font_2 {
+  font-size: 25.42rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 41.86rpx;
+  color: #f8ecece6;
+}
+.text-wrapper {
+  padding: 17.44rpx 0 24.42rpx;
+  background-color: #c2ccd8;
+  border-radius: 31.4rpx;
+  width: 155.23rpx;
+}
+.pos {
+  position: relative;
+  left:420rpx;
+  top: -120.95rpx;
+  margin-bottom: -120rpx;
+}
+.font_3 {
+  font-size: 41.86rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 38.37rpx;
+  color: #f8ecece6;
+}
+.group_6 {
+  padding: 1057.91rpx 0 13.95rpx;
+  
+}
+.section_4 {
+  position: fixed;
+  margin-left: 50rpx;
+  padding: -55.81rpx 0 24.42rpx ;
+  background-color: #ffffff;
+  z-index: 1000;
+  
+}
+.equal-division-item {
+  padding: 10.47rpx 0;
+  width: 310.47rpx;
+  
+}
+.space-y-4 > view:not(:first-child),
+.space-y-4 > text:not(:first-child),
+.space-y-4 > image:not(:first-child) {
+  z-index: 100;
+  margin-top: 6.98rpx;
+
+}
+.image_6 {
+  
+  width: 32.27rpx;
+  height: 32.27rpx;
+
+}
+.font_4 {
+  font-size: 27.91rpx;
+  font-family: 阿里巴巴普惠体;
+  line-height: 25.29rpx;
+  color: #697b7a;
+}
+.image_4 {
+  opacity: 0.76;
+  width: 711.63rpx;
+  height: 955.81rpx;
+}
+.pos_3 {
+  position: absolute;
+  left: 38.37rpx;
+  right: 0;
+  top: 69.77rpx;
+}
+.section_2 {
+  padding: 47.91rpx 34.88rpx 15.7rpx;
+  background-color: #2ec4b6;
+  border-radius: 34.88rpx;
+  box-shadow: 0px 6.98rpx 22.67rpx #00000040;
+  width: 633.14rpx;
+}
+.pos_2 {
+  position: relative;
+  left: 50%;
+  top: -1100rpx;
+  transform: translateX(-50%);
+}
+.text_3 {
+  margin-top: -35.81rpx;
+  line-height: 47.97rpx;
+    word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.text-wrapper_2 {
+  margin-top: 55.81rpx;
+  padding: 19.19rpx 0 27.91rpx;
+  background-color: #c2ccd8;
+  border-radius: 31.4rpx;
+  width: 155.23rpx;
+  height: 83.72rpx;
+}
+.section_3 {
+  background-color: #00000000;
+  height: 1rpx;
+  margin-top: 10px; /* 设置上方间隔的大小 */
+  margin-bottom: 10px; /* 设置下方间隔的大小 */
+}
+.pos_5 {
+  position: relative;
+  left: 95.93rpx;
+  right: 598.26rpx;
+  top: 830.23rpx;
+}
+.image_5 {
+  filter: brightness(0.8); /* 调整亮度，值范围为0-1，值越小越暗 */
+  /* 或者使用以下代码调整对比度 */
+  /* filter: contrast(1.2); 调整对比度，值范围为0-∞，值越大对比度越高 */
+  width: 162.21rpx;
+  height: 170.93rpx;
+  z-index: 1000;
+}
+.pos_4 {
+  position: fixed;
+  right: 19.19rpx;
+  bottom: 179.65rpx;
+}
+
+.input{
+  margin-top:20rpx;
+  margin-left:170rpx;
+}
+.input_1{
+  margin-top:20rpx;
+  margin-left:170rpx;
+}
+
+.container {
+  position: sticky;
+  display: flex;
+  right: 60rpx;
+  flex-direction: column; /* 垂直方向排列子元素 */
+  align-items: stretch; /* 子元素填充容器的宽度 */
+}

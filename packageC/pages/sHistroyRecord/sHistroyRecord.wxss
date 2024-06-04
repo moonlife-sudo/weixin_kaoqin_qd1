@@ -1,0 +1,53 @@
+.page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  background-size: cover;
+}
+.su-table-box {
+  height: 100%;
+  overflow-x: auto;
+  padding-bottom: 40rpx;
+}
+
+.su-table {
+  margin: 0 auto;
+  display: table;
+  border-collapse: collapse;
+  overflow-x: auto;
+  word-break: keep-all;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+  width: 96%;
+  border-radius: 20rpx;
+}
+
+.su-tr {
+  display: table-row;
+}
+
+.su-th {
+  display: table-cell;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  border-top: 2rpx solid #2ec6b4;
+  border-bottom: 2rpx solid #2ec6b4;
+  color: #2ec6b4;
+  font-weight:600;
+}
+
+.su-td {
+  padding: 0rpx 10rpx;
+  width: 100rpx; 
+  display: table-cell;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-top: 2rpx solid #2ec6b496;
+  border-bottom: 2rpx solid #2ec6b496;
+  color:#404040;
+}

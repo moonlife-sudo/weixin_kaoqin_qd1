@@ -1,0 +1,71 @@
+.page {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+.group_3 {
+  padding: 0 17.44rpx;
+  overflow-y: auto;
+}
+.group_4 {
+  padding-top: 238.95rpx;
+}
+.image_2 {
+  margin-left: 13.95rpx;
+  width: 699.42rpx;
+  height: 1004.65rpx;
+}
+.section {
+  background-image: radial-gradient(50% 50% at 50% 50%, #1ed661 5.3%, #1ee767 51.1%, #00ff5d00 100%);
+  filter: blur(3.49rpx);
+  border-radius: 50%;
+  height: 509.3rpx;
+}
+.pos {
+  position: absolute;
+  left: 85.47rpx;
+  right: 85.47rpx;
+  top: 27.91rpx;
+}
+.text_4 {
+  color: #092724;
+  font-size: 95.93rpx;
+  font-family: 自制区喜脉体;
+  line-height: 98.55rpx;
+  letter-spacing: -0.58rpx;
+  text-shadow: 0px 6.98rpx 6.98rpx #00000040;
+}
+.pos_2 {
+  position: absolute;
+  left: 170.79rpx;
+  top: 200.16rpx;
+}
+.section_2 {
+  padding: 55.81rpx 0 24.42rpx;
+  background-color: #ffffff;
+}
+.equal-division {
+  margin: 0 45.35rpx;
+}
+.equal-division-item {
+  flex: 1 1 310.47rpx;
+  padding: 10.47rpx 0;
+}
+.space-y-4 > view:not(:first-child),
+.space-y-4 > text:not(:first-child),
+.space-y-4 > image:not(:first-child) {
+  margin-top: 6.98rpx;
+}
+.image_3 {
+  width: 32.27rpx;
+  height: 32.27rpx;
+}
+.font_1 {
+  font-size: 27.91rpx;
+  font-family: Poppins;
+  line-height: 25.29rpx;
+  color: #697b7a;
+}

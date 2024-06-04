@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "课程资料",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#ffffff",
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index",
+    "van-cell-group": "@vant/weapp/cell-group/index"
+  }
+}

@@ -1,0 +1,82 @@
+<!-- 定义模板 -->
+<view class="test">
+<ad unit-id="adunit-25a38cce79849c41"></ad>
+<template name="trecordTemplate">
+  <block wx:for="{{ submittedData }}" wx:key="index">
+    <view class="flex-col items-start relative section_2 pos_2"  >
+
+        <text class="font_1 text_3 ">{{item.className}}</text>
+        <text class="font_2">开始时间：{{ item.startTime}}</text>
+        <text class="font_2">结束时间：{{ item.finalTime }}</text>
+      
+      <view class="flex-col justify-start items-center self-start text-wrapper_2 pos" bindtap="onClick"data-index="{{index}}">
+        <text class="font_3">详情</text>
+      </view>
+    </view>
+    <view class="section_3 pos_5"></view>
+  </block>
+</template>
+</view>
+
+<view class="flex-col page">
+  <view class="flex-col flex-auto group_3 space-y-34">
+  <view class="flex-row justify-between items-center  group_2">
+  <view class="flex-row space-x-10">
+    <image
+      class="shrink-0 self-center image_2"
+      src="../../../images/16892395477338963105.png"
+    />
+    <van-cell-group>
+   <van-field
+    value="{{ value }}"
+    placeholder="输入课程名查询历史发布"
+    border="{{ false }}"
+    bind:blur="onChange"
+  />
+</van-cell-group>
+  </view>
+  <image
+    class="image_3"
+    src="../../../images/16892395475597859653.png"
+  />
+</view>
+    <view class="self-center group_4">  <view class="flex-col group_5 space-y-18">
+      
+      <view class="flex-col justify-start relative group_6">
+        <view class="flex-col justify-start items-center section_4">
+          <view class="flex-row">
+          
+            <view class="flex-col items-center equal-division-item space-y-4">
+              <image
+                class="image_6"
+                src="../../../images/16892395451976668314.png"
+              />
+              <text class="font_4">打卡</text>
+            </view>
+            <view class="flex-col items-center equal-division-item space-y-4" bindtap="onClick_1">
+              <image
+                class="image_6"
+                src="../../../images/16892395451989456457.png"
+              />
+              <text class="font_4">我的</text>
+            </view>
+          </view>
+        
+      </view>
+       </view>
+   
+  
+   
+<!-- 添加用于动态生成的组件代码的容器 -->
+<view class="container">
+<template is="trecordTemplate" data="{{ submittedData: submittedData }}"></template>
+</view>
+        <image
+          class="image_5 pos_4"
+          src="../../../images/16893000787414694779.png"
+          bindtap="onClick_2"
+        />
+      </view>
+    </view>
+  </view>
+</view>

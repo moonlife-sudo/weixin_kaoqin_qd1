@@ -1,0 +1,59 @@
+<view class="flex-col page">
+  <ad unit-id="adunit-25a38cce79849c41"></ad>
+  <view class="flex-col section space-y-27">
+    <image
+      class="self-center image"
+      src="../../../images/16892395479088187848.png"
+    />
+    <view class="flex-col items-center space-y-16">
+      <text class="font_1 text">{{realName}}</text>
+      <text class="font_1 text_2">{{phone}}</text>
+    </view>
+  </view>
+  <text class="self-start font_2 text_3">个人中心</text>
+  <view class="flex-col group space-y-12">
+    <view class="flex-row justify-between items-center">
+      <view class="flex-row space-x-16"bindtap="onClick_4">
+        <image
+          class="shrink-0 image_2"
+          src="../../../images/ad8595db10b5719da97ebecf2b85e415.png"
+        />
+        <text class="self-start font_2 text_4">个人信息</text>
+      </view>
+      <image
+        class="image_3"
+        src="../../../images/cb282ddd1741d60d3395dc5be898d19b.png"bindtap="onClick_4"
+      />
+    </view>
+    <view class="flex-row justify-between items-center" bindtap="onClick_1">
+      <view class="flex-row items-center space-x-16">
+        <image
+          class="shrink-0 image_2"
+          src="../../../images/1e15de73b9d9ae0886752f1f1ee53d43.png"
+        />
+        <text class="font_2">班级信息</text>
+      </view>
+      <image
+        class="image_4"
+        src="../../../images/238c3099d51f276684e23a0b0c199474.png"
+        bindtap="onClick"
+      />
+    </view>
+  </view>
+  <view class="flex-row justify-between self-center equal-division">
+    <view class="flex-col items-center equal-division-item space-y-4" bindtap="onClick_3">
+      <image
+        class="image_5"
+        src="../../../images/7e7666abbb047e0fc77d188a054200ed.png"
+      />
+      <text class="font_3" bindtap="onClick_2">打卡</text>
+    </view>
+    <view class="flex-col items-center equal-division-item space-y-4">
+      <image
+        class="image_5"
+        src="../../../images/0d368c3e65707c1a9142481f22532d7d.png"
+      />
+      <text class="font_3">我的</text>
+    </view>
+  </view>
+</view>
